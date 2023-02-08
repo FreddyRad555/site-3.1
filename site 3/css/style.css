@@ -1,0 +1,509 @@
+
+*::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10;
+    border: none;
+    
+  }
+  html,body {
+    height: 100%;
+    min-width: 200px;
+    font-family: 'Ubuntu', cursive;
+  }
+  .body{
+    max-width: 1000px;
+    margin: auto;
+    height: 100%;
+  }
+  .header{
+    max-width: 980px;
+    min-width: 150px;
+    display: flex;
+    background-color: #dbdbdb;
+    height: 17%;
+    min-height: 100px;
+  }
+  .logo {
+    width: 6vw;
+    display: flex;
+    margin-left: 7vw;
+    background-color: black;
+    height: 6vw;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .img{
+    height: auto;
+  }
+  .company{
+    max-width: 15%;
+    max-height: 120px;
+    min-height: 2.5%;
+    margin-left: 1vw;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .big{
+    font-size: 1.7vw;
+    font-weight: 700;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .smol{
+    font-size: 1vw;
+    font-weight: 500;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .right{
+    margin-left: auto;
+    font-size: 1.5vw;
+    width: 25%;
+    height: 13%;
+  }
+  .phones{
+    font-weight: 300;
+    line-height: 10px;
+  }
+  .support{
+    font-size: 1.5vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration: none;
+    color: white;
+  }
+  .blockm{
+    display: flex;
+    max-width: 980px;
+    height: 7%;
+  }
+  .menu {
+    background:#767676;
+    }
+    .menu a{
+      display:block;
+      text-align: center;
+      background: #767676;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: auto;
+      margin-top: auto;
+      max-width: 18%;
+      height:60%;
+      padding-top:12px;
+      float: left;
+      font-size:14pt;
+      font-style: bold;
+      letter-spacing:1px;
+      padding-right: 2%;
+      padding-left: 2%;
+      text-align:center;
+      text-decoration: none;
+      color:white;
+      font-family:'Ubuntu';
+      transition-duration: 0.2s;
+    }
+    .main_menu{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  a:hover{
+    background-color: white;
+    text-decoration: underline;
+    text-decoration-color: black;
+    color: black;
+  }
+  .slider{
+    max-width: 980px;
+    display: flex;
+  }
+  
+  .slideshow-container {
+    max-width: 980px;
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+.underm{
+  display: flex;
+  max-width: 980px;
+}
+.small_menu{
+  max-width:300px;
+  color: #717171;
+}
+.bigblock{
+  max-width:980px;
+  display: flex;
+
+}
+.leftblock{
+  width: 100%;
+  max-width: 320px;
+  min-width: 100px;
+  display: block;
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #717171;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: black;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: white;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.centerblock{
+  max-width: 640px;
+  display: flex;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 150px;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: center;
+  font-family: arial;
+  height: 45%;
+  display: table-column-group;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.miniblock{
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  margin-bottom: 10px;
+}
+.prod {
+  max-width: 640px;
+  width: 100%;
+  display: flex;
+}
+.bk{
+  max-width: 980px;
+  width: 100%;
+  display: flex;
+}
+.txt{
+  width: 100%;
+  max-width: 980px;
+  margin-top: 12%;
+  display: flex;
+  line-height: 30px;
+  margin: auto;
+}
+.footer{
+  max-width: 980px;
+  min-width: 150px;
+  margin: auto;
+  width: 100%;
+  background-color: #717171;
+  max-height: 200px;
+  min-height: 50px;
+  height: 100%;
+}
+.cmp{
+  max-width: 300px;
+  min-width: 100px;
+  display: flex;
+  margin: auto;
+}
+.cpm{
+  margin-top: 3vw;
+  width: 100%;
+  max-width: 300px;
+  color: white;
+  line-height: 30px;
+}
+.fmen{
+  max-width: 300px;
+  display: flex;
+  min-width: 100px;
+  margin-top: 10px;
+}
+.fset{
+  width: 100%;
+  display: flex;
+}
+.umenu{
+  width: 100%;
+  color: white;
+  background-color: #717171;
+}
+.umenu a{
+  display:block;
+				background:gray;
+				width: 170px;
+				height:30px;
+				padding-top:12px;
+				float: left;
+				font-size:10pt;
+				font-style: bold;
+				letter-spacing:1px;
+				text-align:center;
+				text-decoration: none;
+				color:white;
+				transition-duration: 0.2s;
+					margin-bottom: 5px;
+}
+.dev{
+  max-width: 300px;
+  min-width: 100px;
+  display: flex;
+  margin: auto;
+}
+.devblock{
+  margin-top: 3vw;
+  width: 100%;
+  max-width: 300px;
+  color: white;
+  line-height: 30px;
+}
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  max-width: 980px;
+  max-height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: 717171;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+
+                    * {box-sizing: border-box;}
+                    
+                    .input[type=text], select, textarea {
+                      width: 100%;
+                      padding: 12px;
+                      border: 1px solid #ccc;
+                      border-radius: 4px;
+                      box-sizing: border-box;
+                      margin-top: 6px;
+                      margin-bottom: 16px;
+                      resize: vertical;
+                    }
+                    
+                    .input[type=submit] {
+                      background-color: #04AA6D;
+                      color: white;
+                      padding: 12px 20px;
+                      border: none;
+                      border-radius: 4px;
+                      cursor: pointer;
+                    }
+                    
+                    .input[type=submit]:hover {
+                      background-color: #45a049;
+                    }
+                    
+                    .container {
+                      border-radius: 5px;
+                      background-color: #f2f2f2;
+                      padding: 20px;
+                    }
+                    .button {
+                      background-color: #dbdbdb; /* Green */
+                      border: none;
+                      color: 767676;
+                      padding: 15px 32px;
+                      text-align: center;
+                      text-decoration: none;
+                      display: inline-block;
+                      font-size: 1.5vw;
+                      margin: 4px 2px;
+                      cursor: pointer;
+                      font-family: 'Ubuntu', cursive;
+                    }
